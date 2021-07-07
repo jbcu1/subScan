@@ -5,7 +5,7 @@
 
 
 #Quickly detect open ports in a given IP interval 
-masscan -p0-65535 --open $1 --max-rate 100000 -oG nmap.gnmap;
+masscan -p0-65535 --open $1 --max-rate 10000 -oG nmap.gnmap;
 
 
 #Extract information from masscan result ro HOST and OPEN_PORTS files
